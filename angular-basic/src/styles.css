@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: myFirstTitle;
+  src: url("/assets/Lalezar-Regular.ttf");
+}
+@font-face {
+  font-family: myFirsttext;
+  src: url("/assets/Vazirmatn-VariableFont_wght.ttf");
+}
+
+.fontTitle{
+  font-family: myFirstTitle, sans-serif;
+  direction: rtl;
+}
+.fontTEXT{
+  font-family: myFirsttext, sans-serif;
+  direction: rtl;
+}
