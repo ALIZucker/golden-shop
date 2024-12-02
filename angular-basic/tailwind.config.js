@@ -11,6 +11,7 @@ module.exports = {
       },fontSize:{
         "text32lg":"2.122vw",
         "text32Sm":"8vw",
+        "text20":"1.3263vw",
         "text16Lg":"1.061vw"
       },textColor:{
         "textcolor":"#C7A579",

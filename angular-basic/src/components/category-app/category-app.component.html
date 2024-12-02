@@ -1,0 +1,14 @@
+<ng-template #template let-message="message">
+  <div class="flex flex-col h-[39.1837vh]  items-center gap-1">
+    <img [src]="message.ImageAdd" class="w-[13.2626vw]  h-[200px] object-fill">
+    <p class="fontTitle text-text20 bg-botcolor py-3 px-12 rounded-[500px] text-white font-medium">{{ message.title }}</p>
+  </div>
+</ng-template>
+
+
+<div class="px-[12.5995vw] flex flex-row lg:gap-[7.9576vw]">
+  <ng-container [ngTemplateOutlet]="template" [ngTemplateOutletContext]="templateContextone"></ng-container>
+  <ng-container [ngTemplateOutlet]="template" [ngTemplateOutletContext]="templateContextTwo"></ng-container>
+  <ng-container [ngTemplateOutlet]="template" [ngTemplateOutletContext]="templateContextThree"></ng-container>
+
+</div>
