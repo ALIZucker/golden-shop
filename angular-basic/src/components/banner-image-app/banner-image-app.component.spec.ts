@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BannerPartComponent } from './banner-part.component';
+import { BannerImageAppComponent } from './banner-image-app.component';
 
-describe('BannerPartComponent', () => {
-  let component: BannerPartComponent;
-  let fixture: ComponentFixture<BannerPartComponent>;
+describe('BannerImageAppComponent', () => {
+  let component: BannerImageAppComponent;
+  let fixture: ComponentFixture<BannerImageAppComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BannerPartComponent]
+      imports: [BannerImageAppComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(BannerPartComponent);
+    fixture = TestBed.createComponent(BannerImageAppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

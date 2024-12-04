@@ -1,0 +1,28 @@
+<div class="w-full flex flex-col  gap-6">
+  <section class="flex flex-row-reverse gap-2 justify-center items-center">
+    <img src="assets/icon/verify.png" class="w-[9.183vw] object-cover h-[38px] lg:w-[3.183vw] lg:h-[48px]">
+    <h2 class="fontTitle text-textcolor lg:text-text32lg text-text32Sm">پرفروش‌ترین‌ها</h2>
+  </section>
+  <section class="flex lg:flex-row w-full  gap-2 bg-gray-100 flex-col pt-4 pl-4 pb-20 rounded-2xl">
+    <ng-container [ngTemplateOutlet]="templateSeller" [ngTemplateOutletContext]="templateContextone"></ng-container>
+    <ng-container [ngTemplateOutlet]="templateSeller" [ngTemplateOutletContext]="templateContextTwo"></ng-container>
+    <ng-container [ngTemplateOutlet]="templateSeller" [ngTemplateOutletContext]="templateContextthree"></ng-container>
+
+  </section>
+</div>
+
+<ng-template #templateSeller let-message="message">
+  <div class="flex flex-col items-center rounded-2xl">
+    <div class="flex flex-row items-center">
+      <img [src]="message.ImageAdd1" class="w-[46.25vw] h-[19.3412vh] lg:w-[197px] lg:h-[197px]">
+      <img [src]="message.ImageAdd2" class="w-[46.25vw] h-[19.3412vh] lg:w-[197px] lg:h-[197px]">
+    </div>
+    <div class="flex flex-row items-center">
+      <img [src]="message.ImageAdd3" class="w-[46.25vw] h-[19.3412vh] lg:w-[197px] lg:h-[197px]">
+      <img [src]="message.ImageAdd4" class="w-[46.25vw] h-[19.3412vh] lg:w-[197px] lg:h-[197px]">
+    </div>
+    <div class="w-full  flex flex-row justify-center items-center lg:mt-16 mt-8 ">
+      <p class="fontTEXT text-blue-600  lg:text-text20 text-[5vw]">مشاهده > </p>
+    </div>
+  </div>
+</ng-template>

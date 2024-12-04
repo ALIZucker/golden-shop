@@ -1,12 +1,12 @@
 <ng-template #template let-message="message">
-  <div class="flex flex-col h-[39.1837vh]  items-center gap-1">
+  <div class="flex flex-col h-[21.1837vh] lg:h-[39.1837vh]  items-center gap-1">
     <img [src]="message.ImageAdd" class="lg:w-[13.2626vw] w-[31.2626vw] h-[100px]   lg:h-[200px] object-fill">
     <p class="fontTitle lg:text-text20 text-[2.2vw] bg-botcolor py-2 lg:py-3 px-4 lg:px-12 rounded-[500px] text-white font-medium">{{ message.title }}</p>
   </div>
 </ng-template>
 
 
-<div class="lg:px-[12.5995vw] px-[1vw] items-center flex flex-row lg:gap-[7.9576vw] gap-[0.9576vw] justify-center">
+<div class="lg:px-[12.5995vw]  px-[1vw] items-center flex flex-row lg:gap-[7.9576vw] gap-[0.9576vw] justify-center">
   <ng-container [ngTemplateOutlet]="template" [ngTemplateOutletContext]="templateContextone"></ng-container>
   <ng-container [ngTemplateOutlet]="template" [ngTemplateOutletContext]="templateContextTwo"></ng-container>
   <ng-container [ngTemplateOutlet]="template" [ngTemplateOutletContext]="templateContextThree"></ng-container>
