@@ -12,7 +12,8 @@ module.exports = {
         "text32lg":"2.122vw",
         "text32Sm":"8vw",
         "text20":"1.3263vw",
-        "text16Lg":"1.061vw"
+        "text16Lg":"1.061vw",
+        "text18":"1.1936vw"
       },textColor:{
         "textcolor":"#C7A579",
       },backgroundColor:{
