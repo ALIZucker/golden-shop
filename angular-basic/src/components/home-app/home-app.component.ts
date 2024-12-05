@@ -5,6 +5,7 @@ import {BannerPartComponent} from "../banner-part/banner-part.component";
 import {ProSellerAppComponent} from "../pro-seller-app/pro-seller-app.component";
 import {BannerImageAppComponent} from "../banner-image-app/banner-image-app.component";
 import {PopularAppComponent} from "../popular-app/popular-app.component";
+import {LaboratoryShoesAppComponent} from "../laboratory-shoes-app/laboratory-shoes-app.component";
 
 
 @Component({
@@ -17,6 +18,7 @@ import {PopularAppComponent} from "../popular-app/popular-app.component";
     ProSellerAppComponent,
     BannerImageAppComponent,
     PopularAppComponent,
+    LaboratoryShoesAppComponent,
 
   ],
   templateUrl: './home-app.component.html',
