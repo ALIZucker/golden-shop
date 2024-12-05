@@ -1,0 +1,37 @@
+<div>
+  <div class="w-full  flex flex-row-reverse justify-between items-center ">
+    <section class=" gap-2 flex flex-row-reverse">
+      <img src="assets/icon/medal-star.png" class="w-12 h-12">
+      <h2 class="fontTitle text-text32lg text-textcolor">تخفیف‌ها و پیشنهادات</h2>
+    </section>
+    <section class=" gap-2 flex flex-row items-center">
+      <img src="assets/icon/arrow-left.png" class="w-8 h-8">
+      <h2 class="fontTEXT text-text16Lg text-blue-600">تخفیف‌ها و پیشنهادات</h2>
+    </section>
+  </div>
+
+
+  <div class="card">
+    <p-carousel
+      [circular]="true"
+      [numScroll]="3"
+      [numVisible]="4"
+      [responsiveOptions]="responsiveOptions"
+      [value]="products"
+      autoplayInterval="3000">
+      <ng-template let-product pTemplate="item">
+        <div class="flex w-[19.0981vw] gap-[14px] bg-searchcolor flex-col  p-4">
+          <img [src]="product.image" class="w-[16.9761vw]">
+          <p class="fontTEXT text-text16Lg ">{{product.title}}</p>
+          <div class="flex flex-row items-center justify-between">
+            <p class="fontTEXT text-text16Lg ">{{product.price}}</p>
+            <p class="px-2 py-1 rounded-[500px] bg-botcolor text-white text-[14px] text-center">{{product.off}}</p>
+
+          </div>  <p class="text-text16Lg fontTEXT w-[7vw]" style=" text-decoration-line: line-through;">{{product.Offprice}}</p>
+        </div>
+
+      </ng-template>
+    </p-carousel>
+  </div>
+
+</div>
