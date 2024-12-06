@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 import {CarouselModule} from 'primeng/carousel';
 import {Button, ButtonModule} from 'primeng/button';
@@ -16,42 +16,14 @@ import {TagModule} from 'primeng/tag';
   styleUrl: './prefer-shoes.component.css'
 })
 export class PreferShoesComponent implements OnInit {
-  responsiveOptions!: any[] ;
+  responsiveOptions!: any[];
 
-  products!:Array<any>;
+  @Input({required: true}) titleName!: string
+  @Input({required: true}) products!:Array<any>
+
 
   ngOnInit(): void {
-    this.products=[{
-      image:"assets/img/Frame%201010108039.png",
-      title:"کفش نایک مدل Phantom Luna",
-      price:"۱,۸۰۰,۰۰۰ تومان",
-      Offprice:"۳,۸۰۰,۰۰۰ تومان",
-      off:"5%"
-    },{
-      image:"assets/img/Frame%201010108039.png",
-      title:"کفش نایک مدل Phantom Luna",
-      price:"۱,۸۰۰,۰۰۰ تومان",
-      Offprice:"۳,۸۰۰,۰۰۰ تومان",
-      off:"5%"
-    },{
-      image:"assets/img/Frame%201010108039.png",
-      title:"کفش نایک مدل Phantom Luna",
-      price:"۱,۸۰۰,۰۰۰ تومان",
-      Offprice:"۳,۸۰۰,۰۰۰ تومان",
-      off:"5%"
-    },{
-      image:"assets/img/Frame%201010108039.png",
-      title:"کفش نایک مدل Phantom Luna",
-      price:"۱,۸۰۰,۰۰۰ تومان",
-      Offprice:"۳,۸۰۰,۰۰۰ تومان",
-      off:"5%"
-    },{
-      image:"assets/img/Frame%201010108039.png",
-      title:"کفش نایک مدل Phantom Luna",
-      price:"۱,۸۰۰,۰۰۰ تومان",
-      Offprice:"۳,۸۰۰,۰۰۰ تومان",
-      off:"5%"
-    },]
+
 
 
     this.responsiveOptions = [
@@ -72,7 +44,6 @@ export class PreferShoesComponent implements OnInit {
       }
     ];
   }
-
 
 
 }
