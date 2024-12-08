@@ -8,6 +8,7 @@ import {PopularAppComponent} from "../popular-app/popular-app.component";
 import {LaboratoryShoesAppComponent} from "../laboratory-shoes-app/laboratory-shoes-app.component";
 import {PreferShoesComponent} from "../prefer-shoes/prefer-shoes.component";
 import {PictureAppComponent} from "../picture-app/picture-app.component";
+import {WebLogAppComponent} from "../web-log-app/web-log-app.component";
 
 
 @Component({
@@ -23,6 +24,7 @@ import {PictureAppComponent} from "../picture-app/picture-app.component";
     LaboratoryShoesAppComponent,
     PreferShoesComponent,
     PictureAppComponent,
+    WebLogAppComponent,
 
   ],
   templateUrl: './home-app.component.html',
