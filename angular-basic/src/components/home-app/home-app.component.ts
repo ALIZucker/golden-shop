@@ -9,6 +9,7 @@ import {LaboratoryShoesAppComponent} from "../laboratory-shoes-app/laboratory-sh
 import {PreferShoesComponent} from "../prefer-shoes/prefer-shoes.component";
 import {PictureAppComponent} from "../picture-app/picture-app.component";
 import {WebLogAppComponent} from "../web-log-app/web-log-app.component";
+import {FloorApp} from "../FloorApp/FloorApp.component";
 
 
 @Component({
@@ -25,6 +26,7 @@ import {WebLogAppComponent} from "../web-log-app/web-log-app.component";
     PreferShoesComponent,
     PictureAppComponent,
     WebLogAppComponent,
+    FloorApp,
 
   ],
   templateUrl: './home-app.component.html',
